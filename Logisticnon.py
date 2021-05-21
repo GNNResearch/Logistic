@@ -17,7 +17,6 @@ def feature_mapping(x1, x2, power):
         for j in np.arange(i+1):
             data['F{}{}'.format(i-j, j)] = np.power(x1, i-j)*np.power(x2, j)
 
-    print(data)
     return pd.DataFrame(data)
 
 
